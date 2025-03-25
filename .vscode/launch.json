@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Reflex App",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "reflex",
+            "args": ["run"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/frontend",
+        }
+    ]
+}

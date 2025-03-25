@@ -1,0 +1,40 @@
+services:
+  backend:
+    image: doc2txt-backend
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
+    ports:
+      - "8005:8005"
+    environment:
+      TIKA_PATH: /opt/tika/tika-app.jar
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8005/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+
+
+
+  frontend:
+    image: doc2txt-frontend
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "3005:3005"
+      - "8000:8000"
+    depends_on:
+      backend:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3005"]
+      interval: 5s
+      timeout: 10s
+      retries: 5
+      start_period: 5s
+
+
+
+
