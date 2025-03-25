@@ -34,7 +34,7 @@ Doc2Txt is a web application that allows users to upload documents and extract t
 Before you begin, ensure you have the following installed on your system:
 
 - [Docker](https://www.docker.com/get-started/)
-- [Docker Compose](https://docs.docker.com/compose/install/)
+
 
 ## 🚀 Getting Started with Docker Compose
 
@@ -43,8 +43,8 @@ This project is set up to run seamlessly using Docker Compose. Follow these step
 1. **📥 Clone the Repository:**
 
    ```bash
-   git clone <your_repository_url>
-   cd <your_project_directory>
+   git clone https://github.com/hidara2000/doc2string.git
+   cd doc2string
    ```
 
 2. **🏗️ Build and Start the Containers:**
