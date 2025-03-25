@@ -7,16 +7,11 @@ import reflex as rx
 
 class State(rx.State):
     """The app state."""
-    text: str = ""
-    """The extracted text from the processed file."""
-    processing: bool = False
-    """Whether a file is currently being processed."""
-    upload_status: str = ""
-    """The status message related to file upload and processing."""
-    show_output: bool = False
-    """Whether to display the output text."""
-    use_markitdown: bool = False
-    """Whether to use the MarkItDown processor."""
+    text: str = ""              # The extracted text from the processed file.
+    processing: bool = False    # Whether a file is currently being processed.
+    upload_status: str = ""     # The status message related to file upload and processing.
+    show_output: bool = False   # Whether to display the output text.
+    use_markitdown: bool = False# Whether to use the MarkItDown processor.
 
     @rx.var
     def is_file_uploaded(self) -> bool:
@@ -320,11 +315,13 @@ def index() -> rx.Component:
                     **styles["container"],
                 ),
             ),
+            
+            # Set spacing and width for the vstack
+            spacing="6",
+            max_width="1200px",
+            margin_y="2em",
+            # Removed duplicate align_items here
         ),
-        spacing="6",
-        max_width="1200px",
-        margin_y="2em",
-        align_items="center",
         **styles["background"],
     )
 

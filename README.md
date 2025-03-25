@@ -9,14 +9,14 @@ Doc2Txt is a web application that allows users to upload documents and extract t
 - **📁 Easy Document Upload:** Simple drag-and-drop or file selection for uploading documents.
 - **🔄 Versatile Backend Processing:**
   - **🔧 Apache Tika:** Supports a wide range of document formats (PDF, DOC, DOCX, PPT, etc.).
-  - **📝 MarkItDown:** Specifically designed for processing Markdown (`.md`) files.
+  - **📝 MarkItDown:** Specifically designed for converting files to Markdown (`.md`) files.
 - **📊 Base64 File Handling:** Accepts file content as a base64 encoded string from the frontend.
 - **⏱️ Real-time Processing Status:** Provides feedback on the upload and processing status.
 - **📋 Extracted Text Output:** Displays the extracted text in a clear and readable format.
 - **📋 Copy to Clipboard:** Easily copy the extracted text to your clipboard.
 - **🔘 Option to Use MarkItDown:** Users can choose to specifically process their file using the MarkItDown library.
 - **💓 Health Check Endpoint:** Backend provides a `/health` endpoint to check the status of the application and its dependencies (Tika).
-- **🐳 Dockerized Application:** Both frontend and backend are containerized for easy deployment and setup.
+- **🐳 Dockerised Application:** Both frontend and backend are containerized for easy deployment and setup.
 
 ## 🛠️ Technology Stack
 

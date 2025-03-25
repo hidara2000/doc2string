@@ -145,7 +145,7 @@ def process_with_markitdown(file_data: bytes, filename: str) -> Tuple[str, Dict[
             temp_file_path = temp_file.name
 
         # Initialize MarkItDown
-        md = MarkItDown(enable_plugins=False)
+        md = MarkItDown(enable_plugins=True)
 
         # Convert the file
         result = md.convert(temp_file_path)
