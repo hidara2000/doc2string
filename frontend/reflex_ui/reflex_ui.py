@@ -1,10 +1,9 @@
 import base64
-from typing import List, Dict, Any
+from typing import Any, Dict, List
 
 import httpx
 import reflex as rx
-
-
+    
 class State(rx.State):
     """The app state."""
     text: str = ""              # The extracted text from the processed file.
@@ -12,6 +11,7 @@ class State(rx.State):
     upload_status: str = ""     # The status message related to file upload and processing.
     show_output: bool = False   # Whether to display the output text.
     use_markitdown: bool = False# Whether to use the MarkItDown processor.
+
 
     @rx.var
     def is_file_uploaded(self) -> bool:
@@ -88,7 +88,7 @@ def get_styles() -> Dict[str, Dict[str, Any]]:
             "border_radius": "xl",
             "box_shadow": "xl",
             "background": "gray.900",
-            "margin_top": "2em",
+            "margin_top": "0.25em",
         },
         "text": {
             "color": "white",

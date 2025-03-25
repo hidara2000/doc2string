@@ -1,2 +1,8 @@
+*.db
+assets/external/
+.web
+__pycache__/
+.states
+*.py[cod]
 **/__pycache__/*
 uv.lock
