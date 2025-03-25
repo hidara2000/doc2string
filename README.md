@@ -67,20 +67,29 @@ This project is set up to run seamlessly using Docker Compose. Follow these step
 
    Make sure both the `backend` and `frontend` services show a status of `Up`. The frontend service depends on the backend being healthy, so it might take a few moments for all services to be fully operational.
 
-4. **🌐 Access the Application:**
-   Once the containers are running, you can access the Doc2Txt web application in your browser at the following URL:
+4. **🌐 Access the Application:**    
+   Results from the publicly downloadable excel file in the assets dir
 
    ```
    http://localhost:3005
    ```
    - ## Home Page
-   ![alt text](<assets/Home Page.png>)    
-   - ## Markitdown (better for Excel)
-   ![alt text](<assets/Sample Excel with Markitdown.png>)
-   - ## Tika
-   ![alt text](<assets/Sample Excel with Tika.png>)   
+<p align="center">
+  <img src="assets/Home Page.png" alt="Project Image" width="400">
+</p>
 
-   - The backend will be accessible (for health checks, etc.) at `http://localhost:8005`.
+  
+   - ## Markitdown (better for Excel)
+<p align="center">
+  <img src="assets/Sample Excel with Markitdown.png" alt="Project Image" width="400">
+</p>
+
+   - ## Tika
+<p align="center">
+  <img src="assets/Sample Excel with Tika.png" alt="Project Image" width="400">
+</p>
+ 
+   - Once the containers are running, The backend will be accessible (for health checks, etc.) at `http://localhost:8005`.
 
 ## 📝 Usage
 
