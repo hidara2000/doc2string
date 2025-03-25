@@ -73,6 +73,12 @@ This project is set up to run seamlessly using Docker Compose. Follow these step
    ```
    http://localhost:3005
    ```
+   - ## Home Page
+   ![alt text](<assets/Home Page.png>)    
+   - ## Markitdown (better for Excel)
+   ![alt text](<assets/Sample Excel with Markitdown.png>)
+   - ## Tika
+   ![alt text](<assets/Sample Excel with Tika.png>)   
 
    - The backend will be accessible (for health checks, etc.) at `http://localhost:8005`.
 
