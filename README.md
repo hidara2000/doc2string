@@ -2,7 +2,8 @@
 
 ## 🔍 Overview
 
-Doc2Txt is a web application that allows users to upload documents and extract text content. It leverages two different backend processing engines: Apache Tika for comprehensive document format support and MarkItDown for Markdown file processing. The frontend is built with Reflex, providing a reactive and user-friendly interface.
+Doc2Txt is a web application that allows users to upload documents and extract text content. It leverages two different backend processing engines: Apache Tika for comprehensive document format support and MarkItDown for Markdown file processing. The frontend is built with Reflex, providing a reactive and user-friendly interface. Although this project has a simple UI the backend is designed for use in converting documents to text for chunking and vector storage in a RAG vector database.   
+https://aws.amazon.com/what-is/retrieval-augmented-generation/ (RAG)
 
 ## ✨ Features
 
